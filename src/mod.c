@@ -18,6 +18,7 @@ ModelID* gModelMapping = NULL;
 void SetupModels() {
     CallUtil(RegisterModel, "Isabelle", isabelle_geo, MODEL_GEO_LAYOUT, MODEL_PUBLIC);
     CallUtil(RegisterModel, "Hat Kid", hat_kid_geo, MODEL_GEO_LAYOUT, MODEL_PUBLIC);
+    CallUtil(RegisterModel, "Mario R96", mario_r96_geo, MODEL_GEO_LAYOUT, MODEL_PUBLIC);
 }
 
 void SetupUI() {
