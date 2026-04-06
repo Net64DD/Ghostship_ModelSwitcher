@@ -1,0 +1,13 @@
+{
+    "name": "Model Switcher",
+    "main": "build.gen",
+    "version": "1.0.0",
+    "website": "https://github.com/Net64DD/Ghostship_ModelSwitcher.git",
+    "description": "A mod for switching between different models in a game.",
+    "author": "Lywx & Net64DD",
+    "license": "MIT",
+    "dependencies": [
+        "LywxUtils"
+    ],
+    "code-version": 1
+}
