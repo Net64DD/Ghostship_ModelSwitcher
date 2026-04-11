@@ -67,10 +67,14 @@ void OnGameRenderHud(IEvent* event) {
 }
 
 MOD_INIT() {
+    LUSLOG_INFO("Initializing More Models Mod");
     SetupModels();
+    LUSLOG_INFO("Registered models");
     SetupUI();
+    LUSLOG_INFO("Setup UI");
     gFrameUpdateListenerID = REGISTER_LISTENER(GameFrameUpdate, EVENT_PRIORITY_NORMAL, OnFrameUpdate);
     gRenderGamePostListenerID = REGISTER_LISTENER(RenderGamePost, EVENT_PRIORITY_NORMAL, OnGameRenderHud);
+    LUSLOG_INFO("Registered event listeners");
 }
 
 MOD_EXIT() {
