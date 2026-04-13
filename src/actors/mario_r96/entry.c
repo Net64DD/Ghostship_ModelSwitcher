@@ -1,4 +1,5 @@
 #include "sm64.h"
+#include "memory.h"
 #include "geo_commands.h"
 #include "game/mario_misc.h"
 #include "game/object_helpers.h"

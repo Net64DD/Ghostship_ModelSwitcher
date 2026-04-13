@@ -31,31 +31,31 @@ Lights1 mario_sm64_material_007_lights = gdSPDefLights1(
 	0xFE, 0xFE, 0xFE, 0x28, 0x28, 0x28);
 
 u8 mario_skin64_rgba16[] = {
-	#embed "actors/hatkid/skin64.rgba16.png"
+	#asset "actors/hatkid/skin64.rgba16.png"
 };
 u8 mario_metal_rgba16[] = {
-	#embed "actors/hatkid/metal.rgba16.png"
+	#asset "actors/hatkid/metal.rgba16.png"
 };
 u8 mario_Hair64_rgba16[] = {
-	#embed "actors/hatkid/Hair64.rgba16.png"
+	#asset "actors/hatkid/Hair64.rgba16.png"
 };
 u8 mario_face164_rgba16[] = {
-	#embed "actors/hatkid/face164.rgba16.png"
+	#asset "actors/hatkid/face164.rgba16.png"
 };
 u8 mario_Hat64_rgba16[] = {
-	#embed "actors/hatkid/Hat64.rgba16.png"
+	#asset "actors/hatkid/Hat64.rgba16.png"
 };
 u8 mario_Face264_rgba16[] = {
-	#embed "actors/hatkid/Face264.rgba16.png"
+	#asset "actors/hatkid/Face264.rgba16.png"
 };
 u8 mario_Face364_rgba16[] = {
-	#embed "actors/hatkid/Face364.rgba16.png"
+	#asset "actors/hatkid/Face364.rgba16.png"
 };
 u8 mario_Face464_rgba16[] = {
-	#embed "actors/hatkid/Face464.rgba16.png"
+	#asset "actors/hatkid/Face464.rgba16.png"
 };
 u8 mario_Wing64_rgba16[] = {
-	#embed "actors/hatkid/Wing64.rgba16.png"
+	#asset "actors/hatkid/Wing64.rgba16.png"
 };
 Vtx mario_000_offset_mesh_vtx_0[818] = {
 	{{{59, -21, 3},0, {54, 793},{0x7F, 0xFF, 0x0, 0xFF}}},

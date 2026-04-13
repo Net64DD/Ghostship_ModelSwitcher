@@ -12,3 +12,9 @@
 extern void* ScriptGetFunction(const char* module, const char* function);
 
 #define CALL_FUNC(mod, func, ...) ((func##Func)ScriptGetFunction(mod, func##Symbol))(__VA_ARGS__)
+
+#if defined(_WIN32)
+#define ALIGN_ASSET(x) __declspec(align(x))
+#else
+#define ALIGN_ASSET(x) __attribute__((aligned (x)))
+#endif
