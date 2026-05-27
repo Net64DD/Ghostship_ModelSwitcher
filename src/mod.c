@@ -52,8 +52,17 @@ void SetupUI() {
 }
 
 void OnFrameUpdate(IEvent* event) {
+    if (gMarioObject == NULL) {
+        return;
+    }
     uint32_t selected = CVarGetInteger("gMoreModels.SelectedModel", 0);
-    gMarioObject->header.gfx.sharedChild = gLoadedGraphNodes[selected > 0 ? gModelMapping[selected] : MODEL_MARIO];
+    ModelID modelId = selected > 0 ? gModelMapping[selected] : MODEL_MARIO;
+    struct GraphNode* node = gLoadedGraphNodes[modelId];
+    if (node == NULL) {
+        LUSLOG_ERROR("Model with ID %d not found!", modelId);
+        return;
+    }
+    gMarioObject->header.gfx.sharedChild = node;
 }
 
 void OnGameRenderHud(IEvent* event) {
